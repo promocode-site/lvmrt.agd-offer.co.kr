@@ -1,5 +1,8 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/category-benefits", "destination": "/index.html" },
+    { "source": "/discount-codes", "destination": "/index.html" },
+    { "source": "/how-to-use", "destination": "/index.html" }
   ]
 }
