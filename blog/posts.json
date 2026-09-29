@@ -3,8 +3,15 @@
   "siteName": "마이리얼트립 쿠폰",
   "baseUrl": "https://lvmrt.agd-offer.co.kr",
   "postUrlPattern": "/blog/{slug}/",
-  "updated": "2026-09-26",
+  "updated": "2026-09-29",
   "posts": [
+    {
+      "title": "마이리얼트립 쿠폰으로 한인민박 예약할 때 할인 받는 법",
+      "slug": "myrealtrip-coupon-korean-guesthouse-discount",
+      "date": "2026-09-29",
+      "description": "마이리얼트립 쿠폰으로 한인민박을 예약할 때 할인코드를 적용하는 방법과 코드별 조건, 예약 전 체크리스트를 정리했습니다.",
+      "image": ""
+    },
     {
       "title": "마이리얼트립 첫구매 쿠폰 사용 후기와 적용방법 안내",
       "slug": "myrealtrip-first-purchase-coupon-review-guide",
