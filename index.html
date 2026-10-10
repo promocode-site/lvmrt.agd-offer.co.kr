@@ -169,14 +169,25 @@ section[id]{scroll-margin-top:64px}
 .lv-ft a:hover{border-bottom-color:#F2B200}
 .lv-ft-bot{max-width:1080px;margin:0 auto;padding:14px 20px 28px;border-top:1px solid rgba(255,255,255,.2);display:flex;justify-content:space-between;gap:10px;font-size:13px}
 .lv-ft-bot a{font-weight:700}
+.lv-pg{display:flex;gap:6px;margin:0 0 20px;overflow-x:auto;scrollbar-width:none}
+.lv-pg::-webkit-scrollbar{display:none}
+.lv-pg a{flex:0 0 auto;white-space:nowrap;text-decoration:none;color:#fff;font-weight:700;font-size:14px;padding:5px 12px;border-radius:6px;border:1px solid rgba(255,255,255,.35)}
+.lv-pg a:hover{border-color:#F2B200}
+.lv-pg a[aria-current="page"]{background:#F2B200;border-color:#F2B200;color:#13294B;box-shadow:0 2px 0 #B58500}
+.lv-ft-links{max-width:1080px;margin:0 auto;padding:0 20px 28px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.lv-ft-links ul{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px 16px}
 @media (max-width:860px){.lv-kpi{grid-template-columns:repeat(2,minmax(0,1fr))}.lv-ft-in{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:560px){.lv-hd h1{font-size:25px}.lv-kpi strong{font-size:19px}.lv-ft-in{grid-template-columns:minmax(0,1fr)}}
-@media (max-width:480px){.lv-hd-in,.lv-nav-in,.lv-div-in,.lv-ft-in,.lv-ft-bot{padding-left:14px;padding-right:14px}}
+@media (max-width:560px){.lv-hd h1{font-size:25px}.lv-kpi strong{font-size:19px}.lv-ft-in,.lv-ft-links{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:480px){.lv-hd-in,.lv-nav-in,.lv-div-in,.lv-ft-in,.lv-ft-bot,.lv-ft-links{padding-left:14px;padding-right:14px}}
 </style>
 </head>
 <body id="top">
 <header class="lv-hd">
 <div class="lv-hd-in">
+<nav class="lv-pg" aria-label="사이트 페이지">
+<a href="./" aria-current="page">홈</a>
+<a href="promo-code/">마이리얼트립 할인코드</a>
+</nav>
 <span class="lv-strap" aria-hidden="true"></span>
 <h1>마이리얼트립 쿠폰·할인코드 모음</h1>
 <p class="lv-lead">마이리얼트립 쿠폰, 카드 할인, 할인코드를 결제 금액별로 비교하고 받는 곳과 쓰는 순서까지 정리했습니다.</p>
@@ -1416,7 +1427,7 @@ section[id]{scroll-margin-top:64px}
 .upd-log-list li{display:flex;gap:14px;align-items:baseline;padding:11px 0;border-top:1px solid rgba(var(--upd-rgb),.14)}
 .upd-log-list li:first-child{border-top:0}
 .upd-log-list time{flex:0 0 auto;font:800 12.5px/1.6 ui-monospace,Menlo,Consolas,monospace;color:var(--upd-c)}
-.upd-log-list p{font-size:14px;line-height:1.6}
+.upd-log-list p{font-size:14px;line-height:1.6;min-width:0;overflow-wrap:anywhere}
 @media (max-width:640px){.upd-log-title{font-size:19px}.upd-log-list li{flex-direction:column;gap:2px}}
 </style>
 </main>
@@ -1437,6 +1448,30 @@ section[id]{scroll-margin-top:64px}
 </ul></div>
 <div><p class="lv-ft-t">마이리얼트립 고객센터</p><p>전화 1670-8208<br>매일 09:00~18:00<br>채팅 상담 24시간<br>help@myrealtrip.com</p></div>
 </div>
+<!--@FOOTER-LINKS-->
+<div class="lv-ft-links">
+<div><p class="lv-ft-t">카드사별 할인</p><ul>
+<li><a href="samsung-card/">삼성카드</a></li>
+<li><a href="lotte-card/">롯데카드</a></li>
+<li><a href="toss-pay/">토스페이</a></li>
+<li><a href="kakao-pay/">카카오페이</a></li>
+<li><a href="hyundai-card/">현대카드</a></li>
+<li><a href="bc-card/">BC카드</a></li>
+<li><a href="unionpay-card/">유니온페이</a></li>
+<li><a href="kb-card/">KB국민카드</a></li>
+<li><a href="woori-card/">우리카드</a></li>
+</ul></div>
+<div><p class="lv-ft-t">다른 할인코드</p><ul>
+<li><a href="tripcom/">트립닷컴 할인코드</a></li>
+<li><a href="agoda/">아고다 할인코드</a></li>
+<li><a href="klook/">클룩 할인코드</a></li>
+<li><a href="hotelscom/">호텔스닷컴 할인코드</a></li>
+<li><a href="rakutentravel/">라쿠텐트래블 할인코드</a></li>
+<li><a href="kkday/">kkday 할인코드</a></li>
+<li><a href="usimsa/">유심사 할인쿠폰</a></li>
+</ul></div>
+</div>
+<!--@/FOOTER-LINKS-->
 <div class="lv-ft-bot"><p>© 2026 마이리얼트립 쿠폰</p><a href="#top">맨 위로</a></div>
 </footer>
 </body>
